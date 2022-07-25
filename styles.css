@@ -1,0 +1,404 @@
+/* google font  */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.slider {
+    margin: 20px 4%;
+    display: flex;
+    background-color: rgb(0, 110, 255);
+    justify-content: space-between;
+    padding: 42px;
+    padding-bottom: 0px;
+    border-radius: 20px;
+
+
+}
+
+.slider-info {
+    /* height: 530px;
+    width: 425px; */
+    width: 50%;
+    color: white;
+
+}
+
+.slider-info h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.slider-info .live-show {
+    background-color: #08b9ff;
+    color: white;
+    font-weight: 800;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+
+.live-show:hover {
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+@keyframes sliding {
+    0% {
+        right: 7%;
+    }
+
+    100% {
+        right: 0%;
+    }
+
+}
+
+.slider-img img {
+
+    width: 499px;
+    height: 500px;
+    position: relative;
+    animation: sliding 1s ease-in-out 0s infinite alternate;
+    animation-play-state: running;
+}
+
+/* main section  */
+
+
+.main-section {
+    margin: 80px 4%;
+    display: grid;
+    grid-template-columns: 280px repeat(1, 1fr);
+    grid-gap: 15px;
+
+
+}
+
+.blog-menu {
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(0, 110, 255);
+    border-radius: 20px;
+    padding: 20px;
+    height: 220px;
+
+}
+
+
+.menu-button {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 10px;
+    border: none;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.active {
+    background-color: white;
+    color: black;
+}
+
+.menu-button:hover {
+    background-color: #08b9ff;
+    color: white;
+}
+
+
+
+.blog-iteam {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.blog {
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+
+
+}
+
+
+.blog img {
+    height: 170px;
+    width: 270px;
+}
+
+.blog-info {
+    padding: 10px;
+}
+
+.blog-info .view-time {
+    color: rgb(199, 193, 193);
+    background-color: white;
+}
+
+.blog-info .view-time span {
+    margin-right: 20px;
+}
+
+.blog-button {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 3px 8px;
+}
+
+/* view button section  */
+.view-all {
+    display: none;
+    justify-content: center;
+}
+
+.view-button {
+    text-align: center;
+    font-size: large;
+    background-color: #ff006a;
+    color: white;
+    font-weight: 700;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    margin: 10px;
+}
+
+/* footer section  */
+
+
+.footer-section {
+    padding: 40px;
+    background-color: rgb(0, 110, 255);
+    color: white;
+}
+
+.footer-head {
+    text-align: center;
+    font-weight: 800;
+
+}
+
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-link .link {
+    font-size: 14 px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.social-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.ancor {
+    display: inline-block;
+}
+
+
+.link-name {
+    color: aliceblue;
+
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* --------------------
+       media query  
+---------------------*/
+
+/* for mobile device  */
+
+@media only screen and (max-width: 690px) {
+
+
+    .top-banner {
+        padding: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .banner-info h1 {
+        font-size: 30px;
+
+    }
+
+
+
+    .banner-info {
+        height: auto;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .live-show {
+        background-color: #DD0000;
+        color: white;
+        font-weight: 800;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        width: 150px;
+        margin: auto;
+    }
+
+
+
+    .top-banner-img {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+    .top-banner-img img {
+        height: 280px;
+        width: 280px;
+        margin: auto;
+
+
+    }
+
+    /* main section  */
+
+    .blog-menu {
+        background-color: white;
+        width: 85%;
+        margin: auto;
+
+
+
+    }
+
+    .menu-button {
+        border: 2px solid wheat;
+    }
+
+    .main-section {
+        margin: 30px 1%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+
+    }
+
+    .blog-iteam {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+
+    .footer-link {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+
+    }
+
+    .link {
+        text-align: center;
+    }
+
+
+}
+
+/* media query for tablet view  */
+
+@media only screen and (min-width: 691px) and (max-width: 992px) {
+
+
+
+    .top-banner {
+        margin: 10px 1%;
+        display: flex;
+        background-color: #161616;
+        justify-content: space-between;
+        padding: 15px;
+
+    }
+
+
+    .top-banner-img img {
+        width: 400px;
+        height: 400px
+    }
+
+    .banner-info h1 {
+        font-size: 30px;
+    }
+
+    .banner-info p {
+        font-size: 15px;
+    }
+
+
+
+    .blog-menu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        background-color: white;
+        padding: 0px;
+        height: auto;
+
+    }
+
+    .menu-button {
+        border: 2px solid wheat;
+        padding: 10px;
+        margin: 10px;
+
+    }
+
+
+
+    .main-section {
+        margin: 3px 1%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+
+    }
+
+    .blog-iteam {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+
+    .view-all {
+        display: flex;
+    }
+
+
+
+
+}
